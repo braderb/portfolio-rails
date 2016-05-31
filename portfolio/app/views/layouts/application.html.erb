@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brad Erb</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="navbar">
+		<ul class="header-menu">
+			<%= link_to '<li>Welcome</li>'.html_safe, 'welcome' %>
+			<%= link_to '<li>Portfolio</li>'.html_safe, 'portfolio' %>
+			<%= link_to '<li>Blog</li>'.html_safe, 'https://medium.com/about-codecademy' %>
+			<%= link_to '<li>About</li>'.html_safe, 'about' %>
+			<%= link_to '<li>Contact</li>'.html_safe, 'contact'%>
+			<li class="name">Brad Erb</li>
+		</ul>
+	</div>
+
+
+<%= yield %>
+
+	<div class="footer">
+		<div class="contact">
+			<div class="social">
+				<%= link_to image_tag('https://www.dropbox.com/s/bum83mshnx6ei06/facebook.svg?raw=1'), 'https://www.facebook.com'%>
+				<%= link_to image_tag('https://www.dropbox.com/s/jz2r8wze2b461ro/linkedin.svg?raw=1'), 'https://www.linkedin.com/in/BradErb/'%>
+				<%= link_to image_tag('https://www.dropbox.com/s/aqckdwgo1f7ebe1/twitter.svg?raw=1'), 'https://www.twitter.com/BradCErb/' %>
+			</div>
+		</br>
+		</br>
+		</br>
+		<p>2016 Brad Erb</p>
+		</div>
+
+</body>
+</html>
